@@ -1,0 +1,205 @@
+{
+    "$schema": "https://github.com/oasis-tcs/sarif-spec/blob/5280a944e8faa17a60ab15917a5449e27ed5b32c/Schemata/sarif-external-property-file-schema-2.1.0.json",
+    "version": "2.1.0",
+    "runs": [
+        {
+            "results": [
+                {
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "properties": {
+                                                    "methodId": "Lambda",
+                                                    "stmt": "SUB#0"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "properties": {
+                                                    "methodId": "83863",
+                                                    "stmt": "ADDCONST#4"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "level": "error",
+                    "locations": [
+                        {
+                            "properties": {
+                                "methodId": 83863
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "TVM integer overflow, exit code: 4"
+                    },
+                    "properties": {
+                        "gasUsage": 148,
+                        "usedParameters": [
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "57896044618658097711785492504343953926634992332820282019728792003956564819969"
+                            },
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "-57896044618658097711785492504343953926634992332820282019728792003956564819970"
+                            },
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "-1"
+                            }
+                        ],
+                        "resultStack": [
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "0"
+                            }
+                        ]
+                    },
+                    "ruleId": "integer-overflow"
+                },
+                {
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "properties": {
+                                                    "methodId": "Lambda",
+                                                    "stmt": "SUB#0"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "properties": {
+                                                    "methodId": "83863",
+                                                    "stmt": "ADDCONST#4"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "level": "error",
+                    "locations": [
+                        {
+                            "properties": {
+                                "methodId": 83863
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "TVM integer overflow, exit code: 4"
+                    },
+                    "properties": {
+                        "gasUsage": 148,
+                        "usedParameters": [
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "-115792089237316195423570985008687907853269984665640564039457584007913129639935"
+                            },
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "115792075433823501842443410139175826487295903273452355127192111309080586354686"
+                            },
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "-1"
+                            }
+                        ],
+                        "resultStack": [
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "0"
+                            }
+                        ]
+                    },
+                    "ruleId": "integer-overflow"
+                },
+                {
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "properties": {
+                                                    "methodId": "83863",
+                                                    "stmt": "ADDCONST#4"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "level": "error",
+                    "locations": [
+                        {
+                            "properties": {
+                                "methodId": 83863
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "TVM integer overflow, exit code: 4"
+                    },
+                    "properties": {
+                        "gasUsage": 179,
+                        "usedParameters": [
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "107104581108263853299889854575698148136481430375747354813875157646042325843952"
+                            },
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "-8687508129052342123681130432989759716788554289893209225582426361870803795963"
+                            },
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "-1"
+                            }
+                        ],
+                        "resultStack": [
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "0"
+                            }
+                        ]
+                    },
+                    "ruleId": "integer-overflow"
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "name": "TSA",
+                    "organization": "Explyt"
+                }
+            }
+        }
+    ]
+}

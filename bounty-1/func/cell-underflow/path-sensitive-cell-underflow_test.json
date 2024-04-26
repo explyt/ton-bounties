@@ -1,0 +1,70 @@
+{
+    "$schema": "https://github.com/oasis-tcs/sarif-spec/blob/5280a944e8faa17a60ab15917a5449e27ed5b32c/Schemata/sarif-external-property-file-schema-2.1.0.json",
+    "version": "2.1.0",
+    "runs": [
+        {
+            "results": [
+                {
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "properties": {
+                                                    "methodId": "117695",
+                                                    "stmt": "LDI#2"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "level": "error",
+                    "locations": [
+                        {
+                            "properties": {
+                                "methodId": 117695
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "TVM cell underflow, exit code: 9"
+                    },
+                    "properties": {
+                        "gasUsage": 112,
+                        "usedParameters": [
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestSliceValue",
+                                "cell": {
+                                },
+                                "dataPos": 0,
+                                "refPos": 0
+                            },
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "0"
+                            }
+                        ],
+                        "resultStack": [
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "0"
+                            }
+                        ]
+                    },
+                    "ruleId": "cell-underflow"
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "name": "TSA",
+                    "organization": "Explyt"
+                }
+            }
+        }
+    ]
+}

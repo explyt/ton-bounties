@@ -1,0 +1,743 @@
+{
+    "$schema": "https://github.com/oasis-tcs/sarif-spec/blob/5280a944e8faa17a60ab15917a5449e27ed5b32c/Schemata/sarif-external-property-file-schema-2.1.0.json",
+    "version": "2.1.0",
+    "runs": [
+        {
+            "results": [
+                {
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "properties": {
+                                                    "methodId": "0",
+                                                    "stmt": "LDU#2"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "level": "error",
+                    "locations": [
+                        {
+                            "properties": {
+                                "methodId": 0
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "TVM cell underflow, exit code: 9"
+                    },
+                    "properties": {
+                        "gasUsage": 212,
+                        "usedParameters": [
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestCellValue"
+                            }
+                        ],
+                        "resultStack": [
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "0"
+                            }
+                        ]
+                    },
+                    "ruleId": "cell-underflow"
+                },
+                {
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "properties": {
+                                                    "methodId": "0",
+                                                    "stmt": "NEGATE#6"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "level": "error",
+                    "locations": [
+                        {
+                            "properties": {
+                                "methodId": 0
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "TVM integer overflow, exit code: 4"
+                    },
+                    "properties": {
+                        "gasUsage": 284,
+                        "usedParameters": [
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestCellValue",
+                                "data": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                            }
+                        ],
+                        "resultStack": [
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "0"
+                            }
+                        ]
+                    },
+                    "ruleId": "integer-overflow"
+                },
+                {
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "properties": {
+                                                    "methodId": "Lambda",
+                                                    "stmt": "LDREF#2"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "properties": {
+                                                    "methodId": "95202",
+                                                    "stmt": "BLKSWAP#1"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "level": "error",
+                    "locations": [
+                        {
+                            "properties": {
+                                "methodId": 95202
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "TVM cell underflow, exit code: 9"
+                    },
+                    "properties": {
+                        "gasUsage": 364,
+                        "usedParameters": [
+                        ],
+                        "resultStack": [
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "0"
+                            }
+                        ]
+                    },
+                    "ruleId": "cell-underflow"
+                },
+                {
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "properties": {
+                                                    "methodId": "Lambda",
+                                                    "stmt": "LDI#5"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "properties": {
+                                                    "methodId": "95202",
+                                                    "stmt": "BLKSWAP#1"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "level": "error",
+                    "locations": [
+                        {
+                            "properties": {
+                                "methodId": 95202
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "TVM cell underflow, exit code: 9"
+                    },
+                    "properties": {
+                        "gasUsage": 434,
+                        "usedParameters": [
+                        ],
+                        "resultStack": [
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "0"
+                            }
+                        ]
+                    },
+                    "ruleId": "cell-underflow"
+                },
+                {
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "properties": {
+                                                    "methodId": "Lambda",
+                                                    "stmt": "SUB#1"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "properties": {
+                                                    "methodId": "95202",
+                                                    "stmt": "POP#3"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "properties": {
+                                                    "methodId": "Lambda",
+                                                    "stmt": "DIV#5"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "level": "error",
+                    "locations": [
+                        {
+                            "properties": {
+                                "methodId": 95202
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "TVM integer overflow, exit code: 4"
+                    },
+                    "properties": {
+                        "gasUsage": 797,
+                        "usedParameters": [
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "-115792089237316195423570985008687907853269984665640564039457584007913129639907"
+                            },
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "0"
+                            },
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "4096"
+                            }
+                        ],
+                        "resultStack": [
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "0"
+                            }
+                        ]
+                    },
+                    "ruleId": "integer-overflow"
+                },
+                {
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "properties": {
+                                                    "methodId": "Lambda",
+                                                    "stmt": "DIV#5"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "properties": {
+                                                    "methodId": "95202",
+                                                    "stmt": "POP#3"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "level": "error",
+                    "locations": [
+                        {
+                            "properties": {
+                                "methodId": 95202
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "TVM integer overflow, exit code: 4"
+                    },
+                    "properties": {
+                        "gasUsage": 828,
+                        "usedParameters": [
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "42"
+                            },
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "0"
+                            },
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "2"
+                            }
+                        ],
+                        "resultStack": [
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "0"
+                            }
+                        ]
+                    },
+                    "ruleId": "integer-overflow"
+                },
+                {
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "properties": {
+                                                    "methodId": "Lambda",
+                                                    "stmt": "DIV#5"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "properties": {
+                                                    "methodId": "95202",
+                                                    "stmt": "POP#3"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "level": "error",
+                    "locations": [
+                        {
+                            "properties": {
+                                "methodId": 95202
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "TVM integer overflow, exit code: 4"
+                    },
+                    "properties": {
+                        "gasUsage": 828,
+                        "usedParameters": [
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "43"
+                            },
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "-115792089237316195423570985008687907853269984665640564039457584007913129639936"
+                            },
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "2"
+                            }
+                        ],
+                        "resultStack": [
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "0"
+                            }
+                        ]
+                    },
+                    "ruleId": "integer-overflow"
+                },
+                {
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "properties": {
+                                                    "methodId": "Lambda",
+                                                    "stmt": "THROWIFNOT#13"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "properties": {
+                                                    "methodId": "95202",
+                                                    "stmt": "BLKSWAP#1"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "level": "error",
+                    "locations": [
+                        {
+                            "properties": {
+                                "methodId": 95202
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "TVM user defined error with exit code 137"
+                    },
+                    "properties": {
+                        "gasUsage": 676,
+                        "usedParameters": [
+                        ],
+                        "resultStack": [
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "0"
+                            }
+                        ]
+                    },
+                    "ruleId": "user-defined-error"
+                },
+                {
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "properties": {
+                                                    "methodId": "Lambda",
+                                                    "stmt": "SUB#1"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "properties": {
+                                                    "methodId": "95202",
+                                                    "stmt": "POP#3"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "properties": {
+                                                    "methodId": "Lambda",
+                                                    "stmt": "DIV#5"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "level": "error",
+                    "locations": [
+                        {
+                            "properties": {
+                                "methodId": 95202
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "TVM integer overflow, exit code: 4"
+                    },
+                    "properties": {
+                        "gasUsage": 1066,
+                        "usedParameters": [
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "-115792089237316195423570985008687907853269984665640564039457584007913129639920"
+                            },
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "0"
+                            },
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "1"
+                            }
+                        ],
+                        "resultStack": [
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "0"
+                            }
+                        ]
+                    },
+                    "ruleId": "integer-overflow"
+                },
+                {
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "properties": {
+                                                    "methodId": "Lambda",
+                                                    "stmt": "DIV#5"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "properties": {
+                                                    "methodId": "95202",
+                                                    "stmt": "POP#3"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "level": "error",
+                    "locations": [
+                        {
+                            "properties": {
+                                "methodId": 95202
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "TVM integer overflow, exit code: 4"
+                    },
+                    "properties": {
+                        "gasUsage": 1097,
+                        "usedParameters": [
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "42"
+                            },
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "0"
+                            },
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "2"
+                            }
+                        ],
+                        "resultStack": [
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "0"
+                            }
+                        ]
+                    },
+                    "ruleId": "integer-overflow"
+                },
+                {
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "properties": {
+                                                    "methodId": "Lambda",
+                                                    "stmt": "DIV#5"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "properties": {
+                                                    "methodId": "95202",
+                                                    "stmt": "POP#3"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "level": "error",
+                    "locations": [
+                        {
+                            "properties": {
+                                "methodId": 95202
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "TVM integer overflow, exit code: 4"
+                    },
+                    "properties": {
+                        "gasUsage": 1097,
+                        "usedParameters": [
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "43"
+                            },
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "-115792089237316195423570985008687907853269984665640564039457584007913129639936"
+                            },
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "2"
+                            }
+                        ],
+                        "resultStack": [
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "0"
+                            }
+                        ]
+                    },
+                    "ruleId": "integer-overflow"
+                },
+                {
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "properties": {
+                                                    "methodId": "115390",
+                                                    "stmt": "LDI#2"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "level": "error",
+                    "locations": [
+                        {
+                            "properties": {
+                                "methodId": 115390
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "TVM cell underflow, exit code: 9"
+                    },
+                    "properties": {
+                        "gasUsage": 246,
+                        "usedParameters": [
+                        ],
+                        "resultStack": [
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "0"
+                            }
+                        ]
+                    },
+                    "ruleId": "cell-underflow"
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "name": "TSA",
+                    "organization": "Explyt"
+                }
+            }
+        }
+    ]
+}

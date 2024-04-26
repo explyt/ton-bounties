@@ -1,0 +1,122 @@
+{
+    "$schema": "https://github.com/oasis-tcs/sarif-spec/blob/5280a944e8faa17a60ab15917a5449e27ed5b32c/Schemata/sarif-external-property-file-schema-2.1.0.json",
+    "version": "2.1.0",
+    "runs": [
+        {
+            "results": [
+                {
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "properties": {
+                                                    "methodId": "75819",
+                                                    "stmt": "REPEAT#8"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "level": "error",
+                    "locations": [
+                        {
+                            "properties": {
+                                "methodId": 75819
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "TVM integer out of expected range, exit code: 5"
+                    },
+                    "properties": {
+                        "gasUsage": 220,
+                        "usedParameters": [
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "2147483648"
+                            }
+                        ],
+                        "resultStack": [
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "0"
+                            }
+                        ]
+                    },
+                    "ruleId": "integer-out-of-range"
+                },
+                {
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "properties": {
+                                                    "methodId": "Lambda",
+                                                    "stmt": "STREF#5"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "properties": {
+                                                    "methodId": "75819",
+                                                    "stmt": "artificial_repeat_REPEAT#8"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "level": "error",
+                    "locations": [
+                        {
+                            "properties": {
+                                "methodId": 75819
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "TVM cell overflow, exit code: 8"
+                    },
+                    "properties": {
+                        "gasUsage": 3320,
+                        "usedParameters": [
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "1073741824"
+                            }
+                        ],
+                        "resultStack": [
+                            {
+                                "type": "org.usvm.test.resolver.TvmTestIntegerValue",
+                                "value": "0"
+                            }
+                        ]
+                    },
+                    "ruleId": "cell-overflow"
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "name": "TSA",
+                    "organization": "Explyt"
+                }
+            }
+        }
+    ]
+}
